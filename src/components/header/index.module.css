@@ -1,0 +1,94 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.image{
+    display: flex;
+    align-items: center;
+}
+.image img{
+    width: 200px;
+}
+.image:hover{
+    cursor: pointer;
+}
+.midSection{
+    display: flex;
+    flex-direction: row;
+
+}
+.midSection p{
+    cursor: pointer;
+    font-size: larger;
+    color: #000929;
+    text-decoration: none;
+}
+.midSection > p:hover{
+    color: #7065f0;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.loginBtn{
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.loginBtn:hover{
+    color: #7065f0;
+}
+.signupBtn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media only screen and (max-width: 728px) {
+
+    .btn{
+        flex-direction: column;
+    }
+    .btn p{
+        font-weight: bolder;
+    }
+    .nav{
+        justify-content: space-between;
+    }
+    .nav{
+        background: #f6fbf1;
+        padding: 5px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .midSection {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .mobileMenu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #f6fbf1;
+        box-shadow: 2px 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 110px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
