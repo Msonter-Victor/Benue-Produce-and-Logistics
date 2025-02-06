@@ -1,9 +1,26 @@
 .footer{
     background: #000;
     color: #fff;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .imgSection{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+}
+
+.firstTextSection{
+    gap: -15px;
+}
+
+.textSection{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 70px;
+}
+
+.p{
+    color: green;
 }

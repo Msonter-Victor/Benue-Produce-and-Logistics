@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+* {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
+
 .nav{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
 }
 .image{
     display: flex;
@@ -16,8 +23,9 @@
 }
 .midSection{
     display: flex;
-    flex-direction: row;
-
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
 }
 .midSection p{
     cursor: pointer;
@@ -26,23 +34,23 @@
     text-decoration: none;
 }
 .midSection > p:hover{
-    color: #7065f0;
+    color: green;
 }
 .btn{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 3rem;
 }
 .loginBtn{
-    background: none;
+
     border: none;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
-    padding: 15px;
     justify-content: center;
     align-items: center;
+    color: green;
 }
 .loginBtn:hover{
     color: #7065f0;

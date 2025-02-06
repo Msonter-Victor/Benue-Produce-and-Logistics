@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #edf2ee;
+    padding: 0 100px 0 150px;
+}
+
+.arrowSection{
+    margin-left: 60px;
+    border: #f6fbf1;
+
+}
+.arrowSection:hover{
+    cursor: pointer;
+}
+
+.heroImage{
+    width: 80%;
+}
+
+.shopButton{
+    background: green;
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px;
+}
+
+.shopButton:hover{
+    opacity: 0.4;
+    cursor: pointer;
+}
+.welcomeText{
+    color: green;
+    font-size:13px;
+    margin-bottom: -10px;
+}
+
+.buttonArrow{
+    color: #f6fbf1;
+    width: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.freshSection{
+    font: bold 32px/1.5 "Roboto", sans-serif;
+}

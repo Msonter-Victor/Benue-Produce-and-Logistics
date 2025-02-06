@@ -1,0 +1,52 @@
+
+.site_layout_header {
+    background: #fff !important;
+    padding: 0 24px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats_card {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.stats_card h3 {
+    color: rgba(0,0,0,0.45);
+    margin-bottom: 8px;
+}
+
+.stats_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ant_layout_sider {
+    background: #1da57a !important;
+}
+
+.ant_menu {
+    color: white !important;
+}
+
+.ant-menu_item:hover {
+    background-color: #189c6e !important;
+}
+
+.greeting{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 600px;
+}
+
+.greeting img{
+    width: 48px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+}
+

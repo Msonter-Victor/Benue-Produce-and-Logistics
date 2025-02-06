@@ -1,27 +1,46 @@
-import logo from "../../assets/logo.png";
-import linkedin from "../../assets/linkedin.png";
 import style from "./index.module.css";
+import footer_image from "./../../images/footer-leaf.png"
 
 const Footer = () => {
     const year = new Date().getFullYear();
-    const dayoLinkedIn = "https://www.linkedin.com/in/akindayo-akinyemi-3b3685248/";
-    const victorLinkedIn = "https://www.linkedin.com/in/msonter-victor-053816269/";
-    const orishaLinkedIn = "https://www.linkedin.com/in/orisha/";
+
 
     return (
         <div className={style.footer}>
-            <img src={logo} alt="logo" className={style.logo}/>
-            <p className={style.copyright}>Copyright © {year} EaziRent. All rights reserved</p>
-            <div className={style.icons}>
-                <a href={dayoLinkedIn} target="_blank" rel="noopener noreferrer">
-                    <img src={linkedin} alt="LinkedIn" className={style.icon}/>
-                </a>
-                <a href={victorLinkedIn} target="_blank" rel="noopener noreferrer">
-                    <img src={linkedin} alt="LinkedIn" className={style.icon}/>
-                </a>
-                <a href={orishaLinkedIn} target="_blank" rel="noopener noreferrer">
-                    <img src={linkedin} alt="LinkedIn" className={style.icon}/>
-                </a>
+            <div>
+                <div className={style.imgSection}>
+                    <img src={footer_image} alt="footer image" />
+                    <h2>Benue Produce and Logistics</h2>
+                </div>
+                <div className={style.firstTextSection}>
+                    <p>Agricultural Products</p>
+                    <p>Logistics and Supply Chain</p>
+                    <p>{year}</p>
+
+                </div>
+            </div>
+            <div className={style.textSection}>
+                <div>
+                    <h4>My account</h4>
+                    <p>My account</p>
+                    <p>Order History</p>
+                    <p>Shopping cart</p>
+                    <p>White List</p>
+                </div>
+                <div>
+                    <h4>Helps</h4>
+                    <p>Contact</p>
+                    <p>FAQs</p>
+                    <p>Terms and Conditions</p>
+                    <p>Privacy policy</p>
+                </div>
+                <div>
+                    <h4>Categories</h4>
+                    <p>Fruits and vegetables</p>
+                    <p>Meat and Fish</p>
+                    <p>Bread and bakery</p>
+                    <p>Beauty and health</p>
+                </div>
             </div>
         </div>
     );

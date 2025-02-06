@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    align-items: stretch; /* Ensure both sections stretch to the same height */
+    justify-content: space-between;
+    padding: 15px 90px;
+    background: #c5f4c1;
+}
+
+.form_container,
+.img_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This ensures both sections stretch to fill available space */
+    height: 100%; /* Ensures both sections have the same height */
+}
+
+.signupImg {
+    width: 500px;
+    height: auto;
+    /*margin-left: -50px;*/
+}
+
+.form_container {
+    width: 420px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-left: 70px;
+}
+
+.input_group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.input_group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input_group input {
+    padding: 12px;
+    border: 1px solid #4f2d5f;
+    border-radius: 12px;
+    background-color: #c5f4c1;
+    font-size: 14px;
+    outline: none;
+}
+
+.input_group input::placeholder {
+    background-color: #c5f4c1;
+}
+
+.input_group select {
+    padding: 12px;
+    border: 1px solid #4f2d5f;
+    border-radius: 12px;
+    background-color: #c5f4c1;
+    font-size: 14px;
+    outline: none;
+}
+
+.terms_checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.terms_checkbox label {
+    margin-left: 5px;
+}
+
+.button_group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.register_button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 16px;
+    width: 420px;
+}
+
+.login_button {
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.img_text {
+    color: black;
+    font-weight: lighter;
+    font-size: 42px;
+    text-align: left;
+}
+
+.with_us {
+    color: #4f2d5f;
+    font-weight: bold;
+}
+
+.signup_img {
+    width: 500px;
+    height: auto;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.img_section {
+    justify-content: space-between;
+    gap: 120px;
+}
