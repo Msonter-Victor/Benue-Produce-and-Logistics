@@ -48,10 +48,10 @@ const DashBoard = () => {
     }
 
     return (
-        <Layout style={{ minHeight: '50vh' }}>
+        <Layout>
             <Sider theme="light">
                 <div className={style.logo} />
-                <Menu theme="light" mode="inline" style={{ backgroundColor: '#fff' }}>
+                <Menu theme="light" mode="inline" style={{ backgroundColor: '#fff'}}>
                     <Menu.Item style={{ color: 'green' }} key="1">Dashboard</Menu.Item>
                     <Menu.Item style={{ color: 'green' }} key="3">Products</Menu.Item>
                     <Menu.Item style={{ color: 'green' }} key="4">Sales</Menu.Item>
@@ -73,7 +73,7 @@ const DashBoard = () => {
                     </div>
                 </Header>
 
-                <Content style={{ margin: '24px 16px', padding: 24, background: '#f0f2f5' }}>
+                <Content style={{ margin: '24px 16px', padding: 24, background: '#edf2ee' }}>
                     <Row gutter={[24, 24]}>
                         <Col span={12}>
                             <StatsCard title="Total orders" value="36,778" percentage="+5.21%" />
