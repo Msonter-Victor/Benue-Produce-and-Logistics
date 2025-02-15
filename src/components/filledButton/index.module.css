@@ -1,15 +1,13 @@
 .btn{
-
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .signupBtn{
     cursor: pointer;
     border: none;
-    background: forestgreen;
     width: 70px;
     height: 35px;
     align-content: center;
-    padding: 6px;
     border-radius: 5px;
-    color: white;
 }

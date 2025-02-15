@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-* {
-    font-family: 'Space Grotesk', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
 }
-
-
 
 .nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 1rem;
+    padding-bottom: 8px;
+}
+
+.nav img{
+    width: 48px;
 }
 .image{
     display: flex;
@@ -40,7 +44,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 3rem;
 }
 .loginBtn{
 
@@ -60,6 +63,10 @@
     color: #fff;
 }
 
+.midSection p{
+    font-weight: normal;
+    font-size: 16px;
+}
 @media only screen and (max-width: 728px) {
 
     .btn{
@@ -99,4 +106,9 @@
         padding: 10px;
         border-radius: 5px;
     }
+}
+.logoText{
+   font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
 }

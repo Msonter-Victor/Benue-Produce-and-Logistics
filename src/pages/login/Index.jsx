@@ -30,10 +30,8 @@ const Login = () => {
             alert("Login successful");
             console.log(response.data.data);
 
-            // Store user data in localStorage
             localStorage.setItem('user', JSON.stringify(response.data.data));
 
-            // Redirect to dashboard
             navigate("/dashboard");
         } catch (error) {
             console.error("Error:", error);
@@ -43,6 +41,10 @@ const Login = () => {
 
     return (
         <div className={style.container}>
+            <div className={style.img_section}>
+                <h1 className={style.img_text}>Reach your <br /> customers faster, <br /> <span className={style.with_us}>With Us.</span></h1>
+                <img className={style.signup_img} src={loginImg} alt="Signup logo" />
+            </div>
             <div className={style.form_container}>
                 <h2 className={style.welcome_text}>Welcome back!</h2>
                 <p className={style.sub_text}>Enter your credentials to access your account</p>
@@ -55,13 +57,7 @@ const Login = () => {
                         <label>Password</label>
                         <input type="password" name="password" placeholder="Enter your password" onChange={handleChange} required />
                     </div>
-                    <div className={style.remember_forgot}>
-                        <div>
-                            <input type="checkbox" id="rememberMe" />
-                            <label htmlFor="rememberMe"> Remember Me</label>
-                        </div>
-                        <a href="#">Forgot password?</a>
-                    </div>
+
                     <button type="submit" className={style.login_button}>Login</button>
                     <div className={style.social_buttons}>
                         <button className={style.social_button}>
@@ -74,10 +70,7 @@ const Login = () => {
                     <p className={style.signup_text}>Don't have an account? <a href="#" onClick={handleSignUpNav}>Sign Up</a></p>
                 </form>
             </div>
-            <div className={style.img_section}>
-                <h1 className={style.img_text}>Reach your <br /> customers faster, <br /> <span className={style.with_us}>With Us.</span></h1>
-                <img className={style.signup_img} src={loginImg} alt="Signup logo" />
-            </div>
+
         </div>
     );
 };

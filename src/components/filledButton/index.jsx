@@ -2,7 +2,7 @@ import React from "react";
 import style from "./index.module.css";
 import { useNavigate } from "react-router-dom";
 
-const FilledButton = ({ name, onClick, whereTo }) => {
+const FilledButton = ({ name, onClick, whereTo,  background, color}) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
@@ -15,9 +15,9 @@ const FilledButton = ({ name, onClick, whereTo }) => {
     };
 
     return (
-        <div className={style.btn} onClick={handleClick}>
-            <p className={style.signupBtn}>{name}</p>
-        </div>
+        <button style={{color: color, background: background}} className={style.signupBtn} onClick={handleClick}>
+            {name}
+        </button>
     );
 };
 

@@ -1,0 +1,137 @@
+.ordersContainer {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+.header h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: gray;
+}
+
+.tabs {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: 2px solid #eaeaea;
+}
+
+.tabs button {
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.activeTab {
+    border-bottom: 3px solid blue;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.actions button {
+    border: 1px solid #bdc3c7;
+    align-items: center;
+    color: black;
+    padding: 5px 5px;
+}
+
+
+.searchBox {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+}
+
+.filterButton, .exportButton {
+    border: 1px solid #000929;
+    border-radius: 5px;
+    font-weight: lighter;
+    width: 120px;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ordersTable {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.ordersTable th, .ordersTable td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.ordersTable th {
+    background: #f9f9f9;
+}
+
+.ordersTable tbody tr:hover {
+    background: #f1f1f1;
+}
+
+.completed {
+    color: green;
+    font-weight: bold;
+}
+
+.continuing {
+    color: blue;
+    font-weight: bold;
+}
+
+.canceled {
+    color: red;
+    font-weight: bold;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.pageNumbers {
+    display: flex;
+    gap: 5px;
+}
+
+.pageNumbers span {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.pageNumbers button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.actionSec{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+    height: 25px;
+    font-weight: lighter;
+    font-size: 12px;
+}

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.sidebar {
+    width: 150px;
+    background-color: #fff;
+    color: #2c3e50;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.dashboardHeader {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.dashboardIcon {
+    width: 50px;
+    margin-left: 20px;
+    height: auto;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.nav_links {
+    flex-grow: 1;
+    margin-top: 20px;
+}
+
+.nav_links a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000929;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.sideImgSection {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+.sideImgSection:hover {
+    background-color: #f8fafc;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.sideImgSection img {
+    width: 16px;
+    margin-right: -10px;
+}
+
+.logoutSection {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.logoutSection:hover {
+    background-color: #f8fafc;
+}

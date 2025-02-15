@@ -51,12 +51,12 @@ const DashBoard = () => {
         <Layout>
             <Sider theme="light">
                 <div className={style.logo} />
-                <Menu theme="light" mode="inline" style={{ backgroundColor: '#fff'}}>
-                    <Menu.Item style={{ color: 'green' }} key="1">Dashboard</Menu.Item>
-                    <Menu.Item style={{ color: 'green' }} key="3">Products</Menu.Item>
-                    <Menu.Item style={{ color: 'green' }} key="4">Sales</Menu.Item>
-                    <Menu.Item style={{ color: 'green' }} key="6">Profile</Menu.Item>
-                    <Menu.Item style={{ color: 'green' }} key="7">Add product</Menu.Item>
+                <Menu theme="light" mode="inline" style={{ backgroundColor: '#fff', gap:'10px'}}>
+                    <Menu.Item className={style.logoText}  key="1">Dashboard</Menu.Item>
+                    <Menu.Item className={style.logoText} key="3">Products</Menu.Item>
+                    <Menu.Item className={style.logoText} key="4">Sales</Menu.Item>
+                    <Menu.Item className={style.logoText} key="6">Profile</Menu.Item>
+                    <Menu.Item className={style.logoText} key="7">Add product</Menu.Item>
                 </Menu>
             </Sider>
 

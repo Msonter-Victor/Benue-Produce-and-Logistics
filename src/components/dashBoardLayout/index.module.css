@@ -1,0 +1,148 @@
+
+
+.dashboard_container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #fff;
+    color: #2c3e50;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.nav_links {
+    flex-grow: 1;
+    margin-top: 20px;
+}
+
+.nav_links a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000929;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+.logout_btn {
+    margin-top: auto;
+    padding: 10px;
+    background-color: indianred;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+}
+
+.logout_btn:hover {
+    background-color: red;
+}
+
+.main_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7fafc;
+}
+
+.header {
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: small;
+}
+
+.header .user_info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user_image {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+.content_area {
+    padding: 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+.sideImgSection{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.sideImgSection:hover{
+    background-color: #f8fafc;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.sideImgSection img{
+    width: 16px;
+    margin-right: -10px;
+}
+
+.logoutSection{
+    display: flex;
+    gap:5px;
+    align-items: center;
+    cursor: pointer;
+
+}
+.logoutSection:hover{
+    background-color: #f8fafc;
+}
+
+.firstHeaderTexts p, h3{
+    margin: 2px;
+}
+
+.searchSection{
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    height: 35px;
+    width: 200px;
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+.searchSection input{
+    border: none;
+    width: 150px;
+    align-self: center;
+}
+.searchSection img{
+    width: 16px;
+    margin-right: -20px;
+    position: fixed;
+}
+.profileDrop{
+    border: none;
+
+}
+
+.user_info input{
+    margin-top: 12px;
+}

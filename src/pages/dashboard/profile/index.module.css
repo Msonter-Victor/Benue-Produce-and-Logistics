@@ -1,0 +1,161 @@
+.profile_container {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    height: 500px;
+}
+
+.profile_form {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    height: 450px;
+}
+
+.profile_image_section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.profile_image_section img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.profile_image_section button {
+    margin-top: 0.5rem;
+    padding: 5px 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.profile_image_section button:hover {
+    opacity: 0.7;
+}
+
+.photo_actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 0.5rem;
+}
+
+.photo_actions button {
+    background-color: #1076ff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.photo_actions button:hover {
+    background-color: blue;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.input_group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+span {
+    font-size: 14px;
+    color: #555;
+    padding: 5px 0;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.save_button {
+    background-color: #1076ff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 10%;
+    margin-top: 10px;
+}
+
+.save_button:hover {
+    background-color: blue;
+}
+.modal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal_content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.image_viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.full_image {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}

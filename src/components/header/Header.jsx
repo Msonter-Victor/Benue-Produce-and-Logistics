@@ -5,7 +5,7 @@ import Cookies from "js-cookie";
 import { toast } from "react-toastify";
 import FilledButton from "../filledButton/index";
 import style from "./index.module.css";
-import logo from "./../../images/footer-leaf.png"
+import logo from "./../../images/benue logo.png"
 import API_BASE_URL from "./../../config/ApiConfig";
 
 
@@ -72,7 +72,10 @@ const Header = () => {
 
     return (
         <div className={style.nav}>
-               <img src={logo} alt="logo"/>
+            <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                <img src={logo} alt="logo"/>
+                <h3 className={style.logoText}>Benue Produce<br/> & Logistics</h3>
+            </div>
             <div className={style.midSection}>
                 <p onClick={() => handleNavigation("/home")}>Home</p>
                 <p onClick={() => handleNavigation("/properties")}>Market</p>
@@ -80,8 +83,8 @@ const Header = () => {
                 <p onClick={() => handleNavigation("/contact")}>Contact</p>
             </div>
             <div className={style.btn}>
-                <p className={style.loginBtn} onClick={() => handleNavigation("/login")}>Login</p>
-                <FilledButton name={"Sign Up"} whereTo={"/signup"} />
+                <FilledButton name={"Login"} whereTo={"/login"} color="green" background="#fff"/>
+                <FilledButton name={"Sign Up"} whereTo={"/signup"} color="#fff" background="green"/>
             </div>
 
         </div>
