@@ -93,7 +93,6 @@ const SignUp = () => {
             console.error("Error:", error.response?.data || error.message);
             alert(error.response?.data?.message || "Registration/Login failed. Please try again.");
         } finally {
-            // Reset reCAPTCHA after submission
             recaptchaRef.current?.reset();
             setCaptchaToken(null);
         }
@@ -103,10 +102,11 @@ const SignUp = () => {
         <div className={style.container}>
             <div className={style.img_section}>
                 <h1 className={style.img_text}>
-                    Reach your <br /> customers faster, <br /> <span className={style.with_us}>With Us.</span>
+                    Reach your <br/> customers faster, <br /> <span className={style.with_us}>With Us.</span>
                 </h1>
                 <img className={style.signupImg} src={signUpImg} alt="Signup logo" />
             </div>
+
             <div className={style.form_container}>
                 <h2>Get Started Now</h2>
                 <form onSubmit={handleSubmit}>
@@ -119,9 +119,9 @@ const SignUp = () => {
                             <InputField label="Email Address" type="email" name="email" placeholder="Enter your email address" value={formData.email} onChange={handleChange} />
                             <InputField label="Phone Number" type="tel" name="phone" placeholder="Enter your phone number" value={formData.phone} onChange={handleChange} />
                         </div>
-                        <div className={style.input_group}>
+                        <div className={style.full_width}>
                             <label htmlFor="role" className={style.label}>Select Role</label>
-                            <select id="role" name="role" value={formData.role} onChange={handleChange} required>
+                            <select id="role" name="role" value={formData.role} onChange={handleChange} required className={style.full_width_input}>
                                 <option value="">Select Role</option>
                                 <option value="ADMIN">Admin</option>
                                 <option value="FARMER">Farmer</option>
@@ -135,7 +135,6 @@ const SignUp = () => {
                         </div>
                     </div>
 
-                    {/* reCAPTCHA */}
                     <div className={style.recaptcha}>
                         <ReCAPTCHA
                             ref={recaptchaRef}
@@ -144,11 +143,9 @@ const SignUp = () => {
                         />
                     </div>
 
-                    <div className={style.button_group}>
-                        <button type="submit" className={style.register_button}>
-                            Register
-                        </button>
-                    </div>
+                    <button type="submit" className={style.register_button}>
+                        Register
+                    </button>
                 </form>
                 <p className={style.signup_text}>Already have an account? <a href="/login">Sign in</a></p>
             </div>
