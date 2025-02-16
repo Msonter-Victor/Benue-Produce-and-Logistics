@@ -6,6 +6,8 @@ import defaultImg from "./../../../images/default head shot.jpg";
 const Profile = () => {
     const storedUser = JSON.parse(localStorage.getItem("user"));
     const token = storedUser?.token;
+    console.log("user : "+ storedUser.toString())
+    console.log("phone: ", storedUser?.phone);
 
     const [loading, setLoading] = useState(false);
     const [profileImage, setProfileImage] = useState(storedUser?.mediaUrl || defaultImg);

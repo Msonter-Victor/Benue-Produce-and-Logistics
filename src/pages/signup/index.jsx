@@ -31,6 +31,7 @@ const SignUp = () => {
         role: "",
     });
 
+
     const [captchaToken, setCaptchaToken] = useState(null);
     const recaptchaRef = useRef(null);
     const navigate = useNavigate();
@@ -64,9 +65,12 @@ const SignUp = () => {
 
         const formattedRole = formData.role.toUpperCase();
         const payload = {
-            ...formData,
+            firstName: formData.firstName,
+            lastName: formData.lastName,
+            email: formData.email,
+            password: formData.password,
+            phone: formData.phone,
             role: formattedRole,
-            captchaToken
         };
         delete payload.confirmPassword;
 
