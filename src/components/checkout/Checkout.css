@@ -1,0 +1,80 @@
+.checkout-container {
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem;
+    background-color: #f3f4f6;
+}
+
+.checkout-form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 2rem;
+    width: 700px;
+}
+
+.billing-details {
+    width: 50%;
+}
+
+.billing-details h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.625rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+
+
+.checkbox-container input {
+    margin-right: 0.5rem;
+}
+
+.order-summary {
+    width: 50%;
+}
+
+.order-summary h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.order-summary .summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.order-summary hr {
+    margin: 0.5rem 0;
+}
+
+.order-summary .total {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.proceed-button {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    padding: 0.625rem 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.proceed-button:hover {
+    background-color: #218838;
+}

@@ -7,10 +7,11 @@ import defaultImg from "./../../images/default head shot.jpg";
 
 const DashboardLayout = () => {
     const location = useLocation();
-
     const storedUser = JSON.parse(localStorage.getItem("user"));
     const profileImage = storedUser?.mediaUrl || defaultImg;
     console.log("meida link: "+storedUser?.mediaUrl)
+
+
 
     const pageInfo = {
         "/dashboard": { title: "Overview", description: "Detailed information about your store" },

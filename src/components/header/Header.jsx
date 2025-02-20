@@ -78,7 +78,7 @@ const Header = () => {
             </div>
             <div className={style.midSection}>
                 <p onClick={() => handleNavigation("/home")}>Home</p>
-                <p onClick={() => handleNavigation("/properties")}>Market</p>
+                <p onClick={() => handleNavigation("/products")}>Products</p>
                 <p onClick={() => handleNavigation("/about")}>About Us</p>
                 <p onClick={() => handleNavigation("/contact")}>Contact</p>
             </div>

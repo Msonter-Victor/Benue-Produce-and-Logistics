@@ -1,0 +1,136 @@
+.product-view-container {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    max-width: 900px;
+    padding: 20px;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(1, 1, 1, 0.1);
+    border-radius: 8px;
+    position: relative;
+}
+
+.cart-icon {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background: #c5f4c1;
+    color: white;
+    padding: 8px;
+    border: 1px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: white;
+    color: green;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 50%;
+}
+
+.product-images {
+    display: flex;
+    gap: 20px;
+}
+
+.image-thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-thumbnails img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, border 0.2s;
+}
+
+.image-thumbnails img:hover {
+    transform: scale(1.1);
+}
+
+.image-thumbnails img.active-thumbnail {
+    border: 1px solid green;
+    transform: scale(1.1);
+}
+
+.main-image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.product-details h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.product-details p {
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.divider {
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+}
+
+.buy-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.buy-section label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.buy-section input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.buy-button {
+    background: green;
+    color: white;
+    border: none;
+    font-size: 14px;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #1da57a;
+}

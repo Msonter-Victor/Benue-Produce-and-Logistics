@@ -1,32 +1,37 @@
 import axios from "axios";
-import {useEffect, useState} from "react";
-import './products.css'
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import './products.css';
 import Spinner from "../../components/spinner";
 import ProductCard from "./productcard";
 
 const AllProducts = () => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
+    const navigate = useNavigate(); // Initialize navigate
 
     useEffect(() => {
-        const fetchProperties = async () => {
+        const fetchProducts = async () => {
             try {
                 const response = await axios.get("http://localhost:8001/api/v1/product/findAll");
-                console.log("data:"+response.data);
-
                 setProducts(response.data);
             } catch (error) {
-                console.error('Error fetching properties:', error);
+                console.error('Error fetching products:', error);
             } finally {
                 setLoading(false);
             }
         };
 
-        fetchProperties();
+        fetchProducts();
     }, []);
+
     if (loading) {
         return <Spinner />;
     }
+
+    const handleProductClick = (productId) => {
+        navigate(`/product/${productId}`); // Redirect to product view page
+    };
 
     return (
         <div className="product-grid-container">
@@ -37,12 +42,13 @@ const AllProducts = () => {
 
             <div className="product-grid">
                 {products.map((product) => (
-                    <ProductCard key={product.id} product={product}/>
+                    <div key={product.productId} onClick={() => handleProductClick(product.productId)}>
+                        <ProductCard product={product} />
+                    </div>
                 ))}
             </div>
         </div>
     );
-
-}
+};
 
 export default AllProducts;

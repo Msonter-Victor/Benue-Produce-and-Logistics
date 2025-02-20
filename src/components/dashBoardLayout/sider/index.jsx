@@ -5,12 +5,20 @@ import productImg from './../../../images/Group.png'
 import logoutImg from './../../../images/logout icon.png'
 import profileImg from './../../../images/Group (1).png'
 import dashboardImg from './../../../images/benue logo.png'
+import {useNavigate} from 'react-router-dom';
 
 const DashBoardSider = () => {
+    const navigate = useNavigate();
+    const handleNavigation = (path) => {
+        navigate(path);
+    };
+
+    const handleLogoClick = () => handleNavigation("/home");
+
     return (
         <aside className={style.sidebar}>
             <div className={style.dashboardHeader}>
-                <img src={dashboardImg} alt="Dashboard Icon" className={style.dashboardIcon} />
+                <img onClick={handleLogoClick} src={dashboardImg} alt="Dashboard Icon" className={style.dashboardIcon} />
             </div>
             <h2>Dashboard</h2>
             <nav className={style.nav_links}>
