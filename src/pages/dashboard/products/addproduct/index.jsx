@@ -3,6 +3,7 @@ import axios from "axios";
 import style from "./index.module.css";
 import exitIcon from "./../../../../images/exit icon.png";
 import uploadIcon from "./../../../../images/cloud-upload.png";
+import API_BASE_URL from "../../../../config/ApiConfig";
 
 const AddProductModal = ({ isOpen, onClose }) => {
     const [productData, setProductData] = useState({
@@ -44,7 +45,7 @@ const AddProductModal = ({ isOpen, onClose }) => {
 
         try {
             const response = await axios.post(
-                "http://localhost:8001/api/v1/product/add",
+                `${API_BASE_URL}/api/v1/product/add`,
                 formData,
                 {
                     headers: {
