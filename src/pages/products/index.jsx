@@ -14,7 +14,7 @@ const AllProducts = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get(`${API_BASE_URL}api/v1/product/findAll`);
+                const response = await axios.get(`${API_BASE_URL}/api/v1/product/findAll`);
                 console.log("products: "+response.data);
                 setProducts(response.data);
             } catch (error) {

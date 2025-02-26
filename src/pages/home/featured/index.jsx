@@ -4,6 +4,7 @@ import arrow from "./../../../images/green arrow.png";
 import style from "./index.module.css";
 
 import Spinner from "../../../components/spinner/index";
+import API_BASE_URL from "../../../config/ApiConfig";
 
 const FeaturedSection = () => {
     const [products, setProducts] = useState([]);
@@ -13,7 +14,7 @@ const FeaturedSection = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get("http://localhost:8001/api/v1/product/findAll");
+                const response = await axios.get(`${API_BASE_URL}/api/v1/product/findAll`);
                 setProducts(response.data || []);
             } catch (err) {
                 setError("Failed to fetch products. Please try again later.");
