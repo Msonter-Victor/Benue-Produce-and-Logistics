@@ -15,6 +15,7 @@ const AllProducts = () => {
         const fetchProducts = async () => {
             try {
                 const response = await axios.get(`${API_BASE_URL}api/v1/product/findAll`);
+                console.log("products: "+response.data);
                 setProducts(response.data);
             } catch (error) {
                 console.error('Error fetching products:', error);
