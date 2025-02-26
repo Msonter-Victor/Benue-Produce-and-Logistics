@@ -42,15 +42,20 @@ const AllProducts = () => {
                 <p>Explore all available products</p>
             </div>
 
-            <div className="product-grid">
-                {products.map((product) => (
-                    <div key={product.productId} onClick={() => handleProductClick(product.productId)}>
-                        <ProductCard product={product} />
-                    </div>
-                ))}
-            </div>
+            {products.length === 0 || false ? (
+                <p className="no-products">No products yet</p>
+            ) : (
+                <div className="product-grid">
+                    {products.map((product) => (
+                        <div key={product.productId} onClick={() => handleProductClick(product.productId)}>
+                            <ProductCard product={product} />
+                        </div>
+                    ))}
+                </div>
+            )}
         </div>
     );
+
 };
 
 export default AllProducts;
