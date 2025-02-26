@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import ReCAPTCHA from "react-google-recaptcha";
 import style from "./index.module.css";
 import signUpImg from "./../../images/signup_img.png";
+import API_BASE_URL from "../../config/ApiConfig";
 
 const InputField = ({ label, type, name, placeholder, value, onChange }) => (
     <div className={style.input_group}>
@@ -74,7 +75,7 @@ const SignUp = () => {
         };
         delete payload.confirmPassword;
 
-        const baseUrl = "http://localhost:8001/api/v1";
+        const baseUrl = `${API_BASE_URL}/api/v1`;
         const registerEndpoint = `${baseUrl}/${formattedRole.toLowerCase()}/register`;
         const loginEndpoint = `${baseUrl}/auth/login`;
 

@@ -5,6 +5,7 @@ import style from "./index.module.css";
 import loginImg from "./../../images/signup_img.png";
 import googleIcon from "./../../images/google icon.png";
 import appleIcon from "./../../images/apple icon.png";
+import API_BASE_URL from "../../config/ApiConfig";
 
 const Login = () => {
     const [formData, setFormData] = useState({ username: "", password: "" });
@@ -23,7 +24,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:8001/api/v1/auth/login", formData, {
+            const response = await axios.post(`${API_BASE_URL}/api/v1/auth/login`, formData, {
                 headers: { "Content-Type": "application/json" },
             });
 

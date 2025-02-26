@@ -4,6 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import "./productview.css";
 import { FaShoppingCart } from "react-icons/fa";
 import StarRating from "../../../components/starRating";
+import API_BASE_URL from "../../../config/ApiConfig";
 
 
 const ProductView = ({ addToCart }) => {
@@ -59,12 +60,13 @@ const ProductView = ({ addToCart }) => {
         try {
             const requestBody = {
                 productId: product.id,
-                orderId: product.id,
+                orderId: orderId || null, 
                 quantity: quantity,
             };
 
+
             const response = await axios.post(
-                "http://localhost:8001/api/v1/order/addToOrder",
+                `${API_BASE_URL}/api/v1/order/addToOrder`,
                 requestBody,
                 {
                     headers: {

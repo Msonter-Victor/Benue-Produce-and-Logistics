@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import './products.css';
 import Spinner from "../../components/spinner";
 import ProductCard from "./productcard";
+import API_BASE_URL from "../../config/ApiConfig";
 
 const AllProducts = () => {
     const [products, setProducts] = useState([]);
@@ -13,7 +14,7 @@ const AllProducts = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get("http://localhost:8001/api/v1/product/findAll");
+                const response = await axios.get(`${API_BASE_URL}api/v1/product/findAll`);
                 setProducts(response.data);
             } catch (error) {
                 console.error('Error fetching products:', error);

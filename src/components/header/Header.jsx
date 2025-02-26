@@ -60,7 +60,7 @@ const Header = () => {
             const response = await axios.post(endpoint, null, config);
 
             if (response.status === 204) {
-                Cookies.remove("EasyRentAuthToken");
+                Cookies.remove("BdicAuthToken");
                 handleNavigation("/home");
             } else {
                 toast.error("An error occurred. Please try again later");
