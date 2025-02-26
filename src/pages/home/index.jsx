@@ -13,7 +13,7 @@ const Home = () => {
     useEffect(() => {
         const wakeUpBackend = async () => {
             try {
-                await axios.get(`${API_BASE_URL}/api/v1/products/findAll`);
+                await axios.get(`${API_BASE_URL}/api/v1/product/findAll`);
             } catch (error) {
                 console.error('Error waking up the backend:', error);
             }
